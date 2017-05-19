@@ -114,9 +114,9 @@
       <div class="reviews__wrapper  slider">
         <h2 class="reviews__title">Отзывы о нас</h2>
         <a class="reviews__write  btn" href="#">Оставить свой</a>
-        <input type="radio" name="reviews" id="reviews-input-1" checked>
-        <input type="radio" name="reviews" id="reviews-input-2">
-        <input type="radio" name="reviews" id="reviews-input-3">
+        <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
+        <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
+        <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
         <div class="reviews__items">
           <blockquote class="reviews__item">
             <div class="reviews__autor-foto">
@@ -140,21 +140,25 @@
             <p class="reviews__quote">Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку.</p>
           </blockquote>
         </div>
-        <div class="reviews__toggles">
-          <label class="slider__toggles" for="reviews-input-1"></label>
-          <label class="slider__toggles" for="reviews-input-2"></label>
-          <label class="slider__toggles" for="reviews-input-3"></label>
+
+        <div id="reviews__active">
+
+          <label for="reviews-input-1"></label>
+          <label for="reviews-input-2"></label>
+          <label for="reviews-input-3"></label>
+
         </div>
       </div>
     </section>
   </main>
   <footer class="page-footer">
+    <span class="page-footer__triangle"></span>
     <div class="address">
       <span class="address__title">Барбершоп «Бородинский»</span>
-      <p class="address__body">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
+      <p class="address__body">г. Санкт-Петербург, ул. Большая<br> Конюшенная 19/8</p>
     </div>
+    <a href="#" class="phone btn">+78005553535</a>
     <div class="social">
-      <span class="social__title">Давайте дружить!</span>
       <div class="social__links">
         <a class="social__link  social__link--vk" href="#">Вконтакте</a>
         <a class="social__link  social__link--fb" href="#">Фейсбук</a>
