@@ -28,7 +28,8 @@
 }
 
 .reviews__item {
-	display: block;
+	display: inline-flex;
+	flex-direction: column;
 }
 
 .reviews__item:nth-child(n+2) {
@@ -38,16 +39,16 @@
 .reviews__autor-foto {
 	position: relative;
 	top: 65px;
-	left: -10px;
+	left: -15px;
 }
 
 .reviews__autor-foto img {
 	width: 50px;
 	height: 48px;
+	object-fit: cover;
 }
 
 .reviews__autor-name {
-	position: relative;
 	font-size: 24px;
 	line-height: 27px;
 	font-weight: 700;
@@ -56,32 +57,32 @@
 
 .reviews__autor-name,
 .reviews__quote {
-	margin-left: 70px;
+	margin-left: 60px;
 }
 
-	#reviews__active {
+#reviews__active {
 
-		text-align: center;
-		margin-left: 23px;
-	}
+	text-align: center;
+	margin-left: 23px;
+}
 
-	#reviews__active label  {
-		display: inline-block;
+#reviews__active label  {
+	display: inline-block;
 
-		border: 1px solid #000;
-		width: 7px;
-		height: 7px;
-		transform:rotate(45deg);
+	border: 1px solid #000;
+	width: 7px;
+	height: 7px;
+	transform:rotate(45deg);
 
-		margin-right: 25px;
-	}
+	margin-right: 25px;
+}
 
-	#reviews__active label:hover{
-		background-color: rgba(0, 0, 0, 0.2);
-	}
+#reviews__active label:hover{
+	background-color: rgba(0, 0, 0, 0.2);
+}
 
-	#slide1:checked ~ #reviews__active label:nth-child(1),
-	#slide2:checked ~ #reviews__active label:nth-child(2),
-	#slide3:checked ~ #reviews__active label:nth-child(3) {
-		background-color: #000;
-	}
+#slide1:checked ~ #reviews__active label:nth-child(1),
+#slide2:checked ~ #reviews__active label:nth-child(2),
+#slide3:checked ~ #reviews__active label:nth-child(3) {
+	background-color: #000;
+}
