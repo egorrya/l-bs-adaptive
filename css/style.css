@@ -531,7 +531,7 @@ img {
   left: 21px;
   width: 16px;
   height: 16px;
-  background-image: url("../img/login.png");
+  background-image: url("../img/icons/login.png");
   background-position: 0px 0px;
   opacity: 0.6;
 }
@@ -634,7 +634,7 @@ img {
 }
 .advantages__item {
   margin-bottom: 23px;
-  padding: 125px 44px 0;
+  padding: 10px 44px 0;
   text-align: center;
   font-size: 20px;
 }
