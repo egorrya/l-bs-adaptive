@@ -1,7 +1,7 @@
 .page-footer__triangle {
-    width: 10%;
-    height: 0;
-    overflow: hidden;
+	width: 10%;
+	height: 0;
+	overflow: hidden;
 }
 
 .page-footer__triangle:after{
@@ -18,7 +18,7 @@
 .address {
 	text-align: center;
 	margin: 0 auto;
-	padding-top: 40px;
+	padding: 40px 20px 0;
 	border-top: 1px solid rgba(256,256,256,0.1);
 }
 
@@ -113,9 +113,6 @@
 	margin-bottom: 50px;
 }
 
-.copyright__title {
-
-}
 
 .copyright__link {
 	.container-fluid();
@@ -134,5 +131,105 @@
 		background-color: #222;
 		border: 1px solid rgba(256,256,256, 0);
 		opacity: 0.3;
+	}
+}
+
+.social span {
+	display: none;
+}
+
+@media @tablet-widths {
+
+	.page-footer__triangle:after{
+		display: none;
+	}
+
+	.phone {
+		display: none;
+	}
+
+	.address {
+		.container-fluid();
+		text-align: left;
+		border-top: 0px solid rgba(256,256,256,0.1);
+	}
+
+	.address__body{
+		&::after {
+			content: "Тел: +78005553535";
+		}
+	}
+
+	.social__link {
+		margin-top: 40px;
+		margin-bottom: 70px;
+	}
+
+	.page-footer{
+		.container-fluid();
+		position: relative;
+	}
+
+	.copyright {
+		position: absolute;
+		top: 0;
+		right: 65px;
+		text-align: center;
+	}
+
+	.copyright__title {
+		margin-left:30px;
+	}
+
+	.copyright__link {
+		margin-top: 15px;
+	}
+}
+
+@media @desktop-widths {
+
+	.page-footer{
+		.container();
+	}
+
+	.address {
+		float: left;
+		max-width: 320px;
+	}
+
+	.social {
+		float: left;
+		max-width: 320px;
+		padding-left: 35px;
+		margin-top: 50px;
+	}
+
+	.copyright {
+		margin-bottom: 30px;
+	}
+
+	.copyright__link {
+		margin-top: 15px;
+	}
+
+	.social__link {
+		height: 50px;
+		width: 50px;
+		margin-right: 5px;
+		background-size: 19px auto;
+		background-position: 50% 15px;
+
+		&--fb {
+			background-size: 12px auto;
+			background-position: 50% 13px;
+		}
+		&--inst {
+			background-size: 23px auto;
+			background-position: 50% 14px;
+		}
+	}
+	.social span {
+		display: block;
+		margin: -20px 0 -15px 25px;
 	}
 }
